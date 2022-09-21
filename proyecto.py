@@ -43,7 +43,7 @@ class formulario:
             self.ventana_opciones()
 
     def botones(self):
-        siguiente_btn=tkinter.Button(ventana_pregunta,text=("Siguiente"),command=self.siguiente_boton,width=10,bg="skyblue",fg="black",font=("arial",14,"bold"))
+        siguiente_btn=tkinter.Button(ventana_pregunta,text=("Siguiente"),command=self.siguiente_boton,width=10,bg="#000000",fg="white",font=("arial",14,"bold"))
         siguiente_btn.place(x=500,y=380)
         salir_btn=tkinter.Button(ventana_pregunta,text=("Salir"),command=ventana_menu.destroy,width=5,bg="red",fg="black",font=("arial",14,"bold"))
         salir_btn.place(x=950,y=50)
