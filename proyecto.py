@@ -122,11 +122,12 @@ etiqueta_reglas=tkinter.Label(
 )
 etiqueta_reglas.pack()
 
-with open('data.json','r',errors="ignore") as f:
+with open('data.json','r',encoding='utf-8',errors="ignore") as f:
     data=json.load(f)
 pregunta=data["pregunta"]
 respuesta=data["respuesta"]
 opciones=data["opciones"]
+
 
 ventana_pregunta=tkinter.Toplevel(width=1050,height=500)
 ventana_pregunta.config(bg="#ffffff")
